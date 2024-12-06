@@ -1,14 +1,15 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 function Header() {
   return (
     <>
       <nav className="navbar navbar-expand-md fixed-top">
         <div className="container-fluid">
-          <a href="#" className="navbar-brand">
+          <Link to={"/"} className="navbar-brand">
             <img src="image/nav1.png" className="weblogo" alt="" width="65px" />
             <img src="image/nav2.png" alt="no image" className="moblogo" />
-          </a>
+          </Link>
+
           <button
             className="navbar-toggler "
             data-bs-target="#pn"
@@ -19,8 +20,8 @@ function Header() {
           <div className="navbar-collapse collapse " id="pn">
             <ul className="navbar-nav ms-auto text-center">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to={"/"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -29,11 +30,11 @@ function Header() {
                   }}
                 >
                   HOME
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  to={"/about"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -42,11 +43,11 @@ function Header() {
                   }}
                 >
                   ABOUT
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/brand"
+                <Link
+                  to={"/brand"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -55,11 +56,11 @@ function Header() {
                   }}
                 >
                   BRAND
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/ourteam"
+                <Link
+                  to={"/ourteam"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -68,11 +69,11 @@ function Header() {
                   }}
                 >
                   OUR TEAM
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/pressrelese"
+                <Link
+                  to={"/pressrelese"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -81,11 +82,11 @@ function Header() {
                   }}
                 >
                   PRESS RELEASE
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to={"/contact"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -94,11 +95,11 @@ function Header() {
                   }}
                 >
                   CONTACT
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/carrier"
+                <Link
+                  to={"/carrier"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -107,11 +108,11 @@ function Header() {
                   }}
                 >
                   CARRERS
-                </a>
+                </Link>
               </li>
-              {/* <li>
-                <a
-                  href="careers.html"
+              <li>
+                <Link
+                  to={"#"}
                   className="nav-link"
                   style={{
                     fontWeight: "lighter",
@@ -120,14 +121,13 @@ function Header() {
                   }}
                 >
                   FRANCHISE
-                </a>
-              </li> */}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         {/* <!--container-fluid end--> */}
       </nav>
-      {/* <!--nav end--> */}
     </>
   );
 }

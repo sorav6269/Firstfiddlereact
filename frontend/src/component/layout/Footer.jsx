@@ -50,10 +50,6 @@ function Footer() {
                       </div>
                       {/* <!--container-fluid end--> */}
 
-
-
-
-
       <div className="container-fluid">
         <div className="row bg-black">
           <div className="col-md-3"></div>
